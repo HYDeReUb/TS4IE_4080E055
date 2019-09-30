@@ -199,7 +199,14 @@ for i in range(1, n+1):
 限制條件:使用 while 設計這個程式
 ```
 ```
-同上題
+x=int(input("WhatTheMath:"))
+p=0
+m=0
+while p<=x:
+    
+    print(m)
+    p+=1
+    m+=p
 ```
 ##### 程式設計題:n階程的計算
 

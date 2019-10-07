@@ -1,5 +1,4 @@
-
-用法：ls [選項]... [檔案]...
+Usage: ls [OPTION]... [FILE]...
 List information about the FILEs (the current directory by default).
 Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
 
@@ -8,8 +7,9 @@ Mandatory arguments to long options are mandatory for short options too.
   -A, --almost-all           do not list implied . and ..
       --author               with -l, print the author of each file
   -b, --escape               print C-style escapes for nongraphic characters
-      --block-size=SIZE      with -l, scale sizes by SIZE when printing them;
-                               e.g., '--block-size=M'; see SIZE format below
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
   -B, --ignore-backups       do not list implied entries ending with ~
   -c                         with -lt: sort by, and show, ctime (time of last
                                modification of file status information);
@@ -32,7 +32,8 @@ Mandatory arguments to long options are mandatory for short options too.
                                can be augmented with a --sort option, but any
                                use of --sort=none (-U) disables grouping
   -G, --no-group             in a long listing, don't print group names
-  -h, --human-readable       with -l and -s, print sizes like 1K 234M 2G etc.
+  -h, --human-readable       with -l and/or -s, print human readable sizes
+                               (e.g., 1K 234M 2G)
       --si                   likewise, but use powers of 1000 not 1024
   -H, --dereference-command-line
                              follow symbolic links listed on the command line
@@ -48,12 +49,12 @@ Mandatory arguments to long options are mandatory for short options too.
                                file-type (--file-type), classify (-F)
   -i, --inode                print the index number of each file
   -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
-  -k, --kibibytes            default to 1024-byte blocks for disk usage;
-                               used only with -s and per directory totals
-  -l                         使用較長格式列出資訊
-  -L, --dereference          當顯示符號鏈結的檔案資訊時，顯示符號鏈結所指示
-                               的目標而並非符號鏈結本身的資訊
-  -m                         所有項目以逗號分隔，並填滿整行行寬
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
   -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
   -N, --literal              print entry names without quoting
   -o                         like -l, but do not list group information
@@ -66,7 +67,6 @@ Mandatory arguments to long options are mandatory for short options too.
       --quoting-style=WORD   use quoting style WORD for entry names:
                                literal, locale, shell, shell-always,
                                shell-escape, shell-escape-always, c, escape
-                               (overrides QUOTING_STYLE environment variable)
   -r, --reverse              reverse order while sorting
   -R, --recursive            list subdirectories recursively
   -s, --size                 print the allocated size of each file, in blocks
@@ -77,7 +77,13 @@ Mandatory arguments to long options are mandatory for short options too.
                                modification time: atime or access or use (-u);
                                ctime or status (-c); also use specified time
                                as sort key if --sort=time (newest first)
-      --time-style=TIME_STYLE  time/date format with -l; see TIME_STYLE below
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or +FORMAT;
+                               FORMAT is interpreted like in 'date'; if FORMAT
+                               is FORMAT1<newline>FORMAT2, then FORMAT1 applies
+                               to non-recent files and FORMAT2 to recent files;
+                               if STYLE is prefixed with 'posix-', STYLE
+                               takes effect only outside the POSIX locale
   -t                         sort by modification time, newest first
   -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
   -u                         with -lt: sort by, and show, access time;
@@ -90,17 +96,11 @@ Mandatory arguments to long options are mandatory for short options too.
   -X                         sort alphabetically by entry extension
   -Z, --context              print any security context of each file
   -1                         list one file per line.  Avoid '\n' with -q or -b
-      --help     顯示此求助說明並離開
-      --version  顯示版本資訊並離開
+      --help     display this help and exit
+      --version  output version information and exit
 
 The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
 Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
-
-The TIME_STYLE argument can be full-iso, long-iso, iso, locale, or +FORMAT.
-FORMAT is interpreted like in date(1).  If FORMAT is FORMAT1<newline>FORMAT2,
-then FORMAT1 applies to non-recent files and FORMAT2 to recent files.
-TIME_STYLE prefixed with 'posix-' takes effect only outside the POSIX locale.
-Also the TIME_STYLE environment variable sets the default style to use.
 
 Using color to distinguish file types is disabled both by default and
 with --color=never.  With --color=auto, ls emits color codes only when
@@ -112,7 +112,6 @@ Exit status:
  1  if minor problems (e.g., cannot access subdirectory),
  2  if serious trouble (e.g., cannot access command-line argument).
 
-GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
-Report ls translation bugs to <https://translationproject.org/team/>
-Full documentation at: <https://www.gnu.org/software/coreutils/ls>
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/ls>
 or available locally via: info '(coreutils) ls invocation'

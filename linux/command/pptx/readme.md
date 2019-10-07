@@ -1,1 +1,1 @@
-### By LibreOffice
+### LibreOffice

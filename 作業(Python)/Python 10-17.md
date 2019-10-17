@@ -32,7 +32,7 @@ input("Where do you live? ")
 print("I live in Boston. ")
 ```
 ```
-Where do you live? <Tainan>
+Where do you live?  Tainan
 I live in Boston. 
 ```
 ```
@@ -43,7 +43,7 @@ print(text)
 print("I hear it's nice there!") 
 ```
 ```
-Where do you live? <kaohsiung>
+Where do you live?  kaohsiung
 Kaohsiung!
 I hear it's nice there!
 ```
@@ -55,8 +55,8 @@ num = int(user_input)
 print(num*num)
 ```
 ```
-Enter a number to find the square of:< 2>
-Enter a integer to find the square of: <6>
+Enter a number to find the square of: 2
+Enter a integer to find the square of: 6
 36
 ```
 ```
@@ -66,8 +66,8 @@ num2 = float(input("Enter another number: "))
 print(num1, "*", num2, "=", num1*num2)
 ```
 ```
-Enter a number: <8>
-Enter another number:<4>
+Enter a number: 8
+Enter another number: 4
 8.0 * 4.0 = 32.0
 ```
 # CH-13
@@ -80,11 +80,11 @@ print("finished comparing num to 0")
 ```
 ```
 >>> %Run 1.py
-Enter a number: <6>
+Enter a number: 6
 num is positive
 finished comparing num to 0
 >>> %Run 1.py
-Enter a number: <-1>
+Enter a number: -1
 finished comparing num to 0
 ```
 ```

@@ -1082,3 +1082,50 @@ NameError                                 Traceback (most recent call last)
 
 NameError: name 'stop' is not defined
 ```
+```
+# 22-8
+def sandwich(kind_of_sandwich):
+    print("--------")
+    print(kind_of_sandwich())
+    print("--------")
+def blt():
+    my_blt = " bacon\n lettuce\n tomato"
+    return my_blt
+def breakfast():
+    my_ec = " eggegg\n cheese"
+    return my_ec
+print(sandwich(blt))
+```
+```
+--------
+ bacon
+ lettuce
+ tomato
+--------
+None
+```
+```
+# 22-9
+def grumpy():
+    print("I am a grumpy cat:")
+    def no_n_times(n): 
+        print("No", n, "times...")
+        def no_m_more_times(m): 
+            print("...and no", m, "more times")
+            for i in range(n+m):
+                print("no")
+        return no_m_more_times
+    return no_n_times
+grumpy()(4)(2)
+```
+```
+I am a grumpy cat:
+No 4 times...
+...and no 2 more times
+no
+no
+no
+no
+no
+no
+```

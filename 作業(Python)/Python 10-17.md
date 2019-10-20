@@ -903,3 +903,182 @@ def get_word_length(word1, word2):
 ```
 (Unknown answer)
 ```
+```
+# 21-5
+def word_length(word1, word2):
+    word = word1+word2
+    return len(word)
+    print("this never gets printed")
+    
+length1 = word_length("Rob", "Banks")
+length2 = word_length("Barbie", "Kenn")
+length3 = word_length("Holly", "Jolley")
+
+print("One name is", length1, "letters long.")
+print("Another name is", length2, "letters long.")
+print("The final name is", length3, "letters long.")
+```
+```
+One name is 8 letters long.
+Another name is 10 letters long.
+The final name is 11 letters long.
+```
+```
+# 21-6
+def add_sub(n1, n2):
+    add = n1 + n2
+    sub = n1 - n2
+    return(add, sub)
+(a, b)= add_sub(3, 4)
+```
+```
+(Unknown answer)
+```
+```
+# 21-7
+def say_name(kid):
+    print(kid)
+def show_kid(kid):
+    return kid
+say_name("Dora")
+show_kid("Ellie")
+print(say_name("Frank"))
+print(show_kid("Gus"))
+```
+```
+Dora
+Frank
+None
+Gus
+```
+```
+# 21-8
+def take_attendance(classroom, who_is_here):
+    """
+    classroom, tuple of strings
+    who_is_here, tuple of strings
+    Prints the names of all kids in class who are also in who_is_here
+    Returns a string, "finished taking attendance"
+    """
+    for kid in classroom:
+        if kid in who_is_here:
+            print(kid)
+    return "finished taking attendance"
+help(take_attendance)
+```
+```
+Help on function take_attendance in module __main__:
+
+take_attendance(classroom, who_is_here)
+    classroom, tuple of strings
+    who_is_here, tuple of strings
+    Prints the names of all kids in class who are also in who_is_here
+    Returns a string, "finished taking attendance"
+
+
+```
+# CH-22
+```
+# 22-1
+def fairy_tale():   
+    peter = 5
+    print(peter)   
+peter = 30
+fairy_tale()
+print(peter)
+```
+```
+5
+30
+```
+```
+# 22-2
+def e():
+    v = 5
+    print(v)   
+v= 1
+e()
+```
+```
+5
+```
+```
+# 22-3
+def f():
+    print(v)
+v= 1
+f()
+```
+```
+1
+```
+```
+# 22-4
+def g():
+    print(v+x)  
+v= 1
+x= 2
+g()
+```
+```
+3
+```
+```
+# 22-5
+def h():
+    v += 5   
+v= 1
+h()
+```
+```
+UnboundLocalError                         Traceback (most recent call last)
+<ipython-input-2-0b532e80723d> in <module>()
+      3    v += 5
+      4 v= 1
+----> 5 h()
+
+<ipython-input-2-0b532e80723d> in h()
+      1 22-5
+      2 def h():
+----> 3    v += 5
+      4 v= 1
+      5 h()
+
+UnboundLocalError: local variable 'v' referenced before assignment
+```
+```
+# 22-6
+def odd_or_even(num):
+    num = num%2
+    if num == 1:
+        return "odd"
+    else:
+        return "even"
+num = 4 
+print(odd_or_even(num))   
+odd_or_even(5)
+```
+```
+even
+'odd'
+```
+```
+# 22-7
+def sing():
+    def stop(line):
+        print("STOP", line)
+    stop("it's hammer time")
+    stop("in the name of love")
+    stop("hey, what’s that sound")
+sing()
+stop()
+```
+```
+NameError                                 Traceback (most recent call last)
+<ipython-input-1-c843682fb486> in <module>()
+      6     stop("hey, what’s that sound")
+      7 sing()
+----> 8 stop()
+
+NameError: name 'stop' is not defined
+```

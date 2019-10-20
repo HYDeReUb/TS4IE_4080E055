@@ -738,7 +738,6 @@ end = 0
 found_words =()   
 ```
 ```
->>> %Run 1.py
 (Unknown answer.)
 ```
 ```
@@ -763,7 +762,6 @@ for char in words:
         end = end + 1 
 ```
 ```
->>> %Run 1.py
 (Unknown answer.)
 ```
 ```
@@ -870,6 +868,38 @@ def take_attendance(classroom, who_is_here):
     return "finished taking attendance"
 ```
 ```
->>> %Run 1.py
 (Unknown answer.)
+```
+```
+# 21-2
+def hello():
+    print('Hello!')
+
+hello()
+def sayHi(name, title):
+    print(name + title +' 你好!')
+sayHi(' 王小明 ', ' 同學 ')
+```
+```
+Hello!
+ 王小明  同學  你好!
+```
+```
+# 21-3
+sayHi(' 王小明 ', title=' 同學 ')
+sayHi(title=' 同學 ', name=' 王小明 ')
+sayHi(title=' 同學 ', ' 王小明 ')
+```
+```
+(SyntaxError: positional argument follows keyword argument)
+```
+```
+# 21-4
+def get_word_length(word1, word2): 
+    word = word1+word2  
+    return len(word) 
+    print("this never gets printed") 
+```
+```
+(Unknown answer)
 ```

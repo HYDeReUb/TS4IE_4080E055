@@ -1129,3 +1129,211 @@ no
 no
 no
 ```
+# CH-25
+```
+# 25-1
+years = [1984, 1986, 1988, 1988]
+print(len(years))
+print(years.count(1988))
+print(years.count(2017))
+print(years.index(1986))
+print(years.index(1988))
+```
+```
+4
+2
+0
+1
+2
+```
+```
+# 25-2
+first3letters = []
+first3letters.append("a")
+first3letters.append("c")
+first3letters.insert(1, "b")
+print(first3letters)
+last3letters = ["x", "y", "z"]
+first3letters.extend(last3letters)
+print(first3letters)
+last3letters.extend(first3letters)
+print(last3letters)
+```
+```
+['a', 'b', 'c']
+['a', 'b', 'c', 'x', 'y', 'z']
+['x', 'y', 'z', 'a', 'b', 'c', 'x', 'y', 'z']
+```
+```
+# 25-3
+polite = ["please", "and", "thank", "you"]   
+print(polite.pop())
+print(polite)
+print(polite.pop(1)) 
+print(polite)
+```
+```
+you
+['please', 'and', 'thank']
+and
+['please', 'thank']
+```
+```
+# 25-4
+colors = ["red", "blue", "yellow"]
+colors[0] = "orange"
+print(colors)
+colors[1] = "green"
+print(colors)
+colors[2] = "purple"
+print(colors)
+```
+```
+['orange', 'blue', 'yellow']
+['orange', 'green', 'yellow']
+['orange', 'green', 'purple']
+```
+# CH-26
+```
+# 26-1
+heights = [1.4, 1.3, 1.5, 2, 1.4, 1.5, 1]
+
+heights.reverse()  
+print(heights)
+
+heights.sort()  
+print(heights)
+
+heights.reverse()
+print(heights)
+```
+```
+[1, 1.5, 1.4, 2, 1.5, 1.3, 1.4]
+[1, 1.3, 1.4, 1.4, 1.5, 1.5, 2]
+[2, 1.5, 1.5, 1.4, 1.4, 1.3, 1]
+```
+```
+# 26-2
+L = [[], [], []]
+L[0] = [1, 2, 3]
+L[1].append('t')
+L[1].append('o')
+L[1][0] = 'd'
+```
+```
+(Unknown answer.)
+```
+```
+# 26-3
+x = 'x' 
+o = 'o'
+e = '_'
+board = [[x, e, o], [e, x, o], [x, e, e]]
+```
+```
+(Unknown answer)
+```
+```
+# 26-4
+stack = []
+cook = ['b', 'b', 'b']
+stack.extend(cook)
+stack.pop()
+stack.pop()
+cook = ['c', 'c']
+stack.extend(cook)
+stack.pop()
+cook = ['b', 'b']
+stack.extend(cook)
+stack.pop()
+stack.pop()
+stack.pop()
+```
+```
+(Unknown answer)
+```
+```
+# 26-5
+line = []
+line.append('Ana')
+line.append('Bob')
+line.pop(0)
+line.append('Claire')
+line.append('Dave')
+line.pop(0)
+line.pop(0)
+line.pop(0)
+```
+```
+(Unknown answer)
+```
+# CH-27
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```
+```
+
+```

@@ -1269,25 +1269,67 @@ line.pop(0)
 ```
 # CH-27
 ```
-
+# 27-1
+legs = {} 
+legs["human"] = 2
+legs["cat"] = 4
+legs["snake"] = 0
+print(len(legs))
+legs["cat"] = 3
+print(len(legs))
+print(legs)
 ```
 ```
-
+3
+3
+{'human': 2, 'cat': 3, 'snake': 0}
 ```
 ```
-
+# 27-2
+household = {"person":4, "cat":2, "dog":1, "fish":2}
+removed = household.pop("fish")
+print(removed)
 ```
 ```
-
+2
 ```
 ```
-
+# 27-3
+grades = {}
+grades["Chris"] = [100, 70]
+grades["Angela"] = [90, 100]
+grades["Bruce"] = [80, 40]
+grades["Stacey"] = [70, 70]
+for student in grades.keys():
+    print(student)
+for quizzes in grades.values():
+    print(sum(quizzes)/2)
+for student in grades.keys():
+    scores = grades[student]
+    grades[student].append(sum(scores)/2)
+print(grades)
 ```
 ```
-
+Chris
+Angela
+Bruce
+Stacey
+85.0
+95.0
+60.0
+70.0
+{'Chris': [100, 70, 85.0], 'Angela': [90, 100, 95.0], 'Bruce': [80, 40, 60.0], 'Stacey': [70, 70, 70.0]}
 ```
 ```
-
+Chris
+Angela
+Bruce
+Stacey
+85.0
+95.0
+60.0
+70.0
+{'Chris': [100, 70, 85.0], 'Angela': [90, 100, 95.0], 'Bruce': [80, 40, 60.0], 'Stacey': [70, 70, 70.0]}
 ```
 ```
 

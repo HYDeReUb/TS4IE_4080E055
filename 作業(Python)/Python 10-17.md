@@ -1321,61 +1321,295 @@ Stacey
 {'Chris': [100, 70, 85.0], 'Angela': [90, 100, 95.0], 'Bruce': [80, 40, 60.0], 'Stacey': [70, 70, 70.0]}
 ```
 ```
-Chris
-Angela
-Bruce
-Stacey
-85.0
-95.0
-60.0
-70.0
-{'Chris': [100, 70, 85.0], 'Angela': [90, 100, 95.0], 'Bruce': [80, 40, 60.0], 'Stacey': [70, 70, 70.0]}
+# 27-4
+lyrics = "Happy birthday to you Happy birthday to you " +\
+         "Happy birthday dear Happy birthday to you"
+counts = {}
+words = lyrics.split(" ")
+for w in words:
+    w = w.lower()
+    if w not in counts:
+        counts[w] = 1
+    else:
+        counts[w] += 1
+print(counts) 
 ```
 ```
+{'happy': 4, 'birthday': 4, 'to': 3, 'you': 3, 'dear': 1}
+```
+```
+# 27-5
+def square(x):
+    return x*x
 
-```
-```
+def circle(r):
+    return 3.14*r*r
 
-```
-```
+def equilateraltriangle(s):
+    return(s*s)*(3**0.5)/4
 
+areas = {"sq": square, "ci": circle, "eqtri":
+         equilateraltriangle}
+n= 2
+print(areas["sq"](n))
+print(areas["ci"](n))
+print(areas["eqtri"](n))
 ```
 ```
+4
+12.56
+1.7320508075688772
+```
+# CH-28
+```
+# 28-1
+def add_word(d, word, definition):
+    """ d, dict that maps strings to lists of strings
+        word, a string
+        definition, a string
+        Mutates d by adding the entry word:definition
+        If word is already in d, append definition to word’s value list
+        Does not return anything
+     """
+    if word in d:
+        d[word].append(definition)
+    else:
+        d[word] = [definition]
 
+words = {}
+add_word(words, 'box', 'fight') 
+print(words)
+add_word(words, 'box', 'container')
+print(words)
+add_word(words, 'ox', 'animal') 
+print(words)
 ```
 ```
+{'box': ['fight']}
+{'box': ['fight', 'container']}
+{'box': ['fight', 'container'], 'ox': ['animal']}
+```
+```
+# 28-2
+songs = {"Wannabe": 1, "Roar": 1, "Let It Be": 5, "Red Corvette": 4}   
+for s in songs.keys():
+    if songs[s] == 1:
+        songs.pop(s)
+```
+```
+RuntimeError                              Traceback (most recent call last)
+<ipython-input-2-3089b7ba46f5> in <module>()
+      1 songs = {"Wannabe": 1, "Roar": 1, "Let It Be": 5, "Red Corvette": 4}
+----> 2 for s in songs.keys():
+      3     if songs[s] == 1:
+      4         songs.pop(s)
 
+RuntimeError: dictionary changed size during iteration
 ```
 ```
+# 28-3
+songs = [1, 1, 5, 4]
+for s in songs:
+    if s == 1: songs.pop(s)
+print(songs)
+```
+```
+[1, 5, 4]
+```
+```
+# 28-4
+songs = [1, 1, 5, 4]
+songs_copy = songs.copy() 
+songs = []
+for s in songs_copy:     
+    if s != 1:
+        songs.append(s) 
+print(songs)
+```
+```
+[5, 4]
+```
+# CH-31
+```
+# 31-1
+class Rectangle:
+    """
+    a rectangle object with a length and a width
+    """
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+    def set_length(self, length):
+        self.length = length
+    def set_width(self, width):
+        self.width = width
+```
+```
+(Unknown answer)
+```
+# CH-32
+```
+# 32-2
+class Stack:
+    def __init__( self):
+        self.stack = []
+    def get_stack_elements(self):
+        return self.stack.copy()   
+    def add_one(self, item):
+        self.stack.append(item)
+    def add_many(self, item, n):
+        for i in range(n):
+            self.stack.append(item)
+    def remove_one(self):
+        self.stack.pop()
+    def remove_many(self , n):
+        for i in range(n):
+            self.stack.pop()
+    def size(self):
+        return len(self.stack)
+    def prettyprint(self):
+        for thing in self.stack[::-1]:
+            print('|_', thing, '_|')
 
-```
-```
 
-```
-```
 
+pancakes = Stack()
+pancakes.add_one("blueberry")
+pancakes.add_many("chocolate", 4)
+print(pancakes.size())
+pancakes.remove_one()
+print(pancakes.size())
+pancakes.prettyprint()
 ```
 ```
+5
+4
+|_ chocolate _|
+|_ chocolate _|
+|_ chocolate _|
+|_ blueberry _|
+```
+```
+# 32-3
+class Stack:
+    def __init__( self):
+        self.stack = []
+    def get_stack_elements(self):
+        return self.stack.copy()   
+    def add_one(self, item):
+        self.stack.append(item)
+    def add_many(self, item, n):
+        for i in range(n):
+            self.stack.append(item)
+    def remove_one(self):
+        self.stack.pop()
+    def remove_many(self , n):
+        for i in range(n):
+            self.stack.pop()
+    def size(self):
+        return len(self.stack)
+    def prettyprint(self):
+        for thing in self.stack[::-1]:
+            print('|_', thing, '_|')
+            
 
+circles = Stack()
+one_circle = Circle()
+one_circle.change_radius(2)
+circles.add_one(one_circle)
+for i in range(5):
+    one_circle = Circle()
+    one_circle.change_radius(1)
+    circles.add_one(one_circle)
+print(circles.size())
+circles.prettyprint()
 ```
 ```
+NameError                                 Traceback (most recent call last)
+<ipython-input-3-92bf1add750b> in <module>()
+     22 
+     23 circles = Stack()
+---> 24 one_circle = Circle()
+     25 one_circle.change_radius(2)
+     26 circles.add_one(one_circle)
 
+NameError: name 'Circle' is not defined
 ```
 ```
+# 32-4
+class Stack:
+    def __init__( self):
+        self.stack = []
+    def get_stack_elements(self):
+        return self.stack.copy()   
+    def add_one(self, item):
+        self.stack.append(item)
+    def add_many(self, item, n):
+        for i in range(n):
+            self.stack.append(item)
+    def remove_one(self):
+        self.stack.pop()
+    def remove_many(self , n):
+        for i in range(n):
+            self.stack.pop()
+    def size(self):
+        return len(self.stack)
+    def prettyprint(self):
+        for thing in self.stack[::-1]:
+            print('|_', thing, '_|')
 
+circles = Stack()
+one_circle = Circle()
+one_circle.change_radius(2)
+circles.add_one(one_circle)
+one_circle = Circle()
+one_circle.change_radius(1)
+circles.add_many(one_circle, 5)
+print(circles.size())
+circles.prettyprint()
 ```
 ```
+NameError                                 Traceback (most recent call last)
+<ipython-input-4-8fce360a61c1> in <module>()
+     21 
+     22 circles = Stack()
+---> 23 one_circle = Circle()
+     24 one_circle.change_radius(2)
+     25 circles.add_one(one_circle)
 
+NameError: name 'Circle' is not defined
+```
+# CH-34
+```
+# 34-1
+import math 
+distance = float(input("How far away is your friend?(m)"))
+speed = float(input("How fast can you throw?(m/s)"))
+angle_d = float(input("What angle do you want to throw at?(degrees)"))
+tolerance = 2 
+angle_r = math.radians(angle_d)
+reach = 2*speed**2*math.sin(angle_r)*math.cos(angle_r)/9.8
+if (reach > distance - tolerance)and (reach < distance + tolerance):
+    print("Nice throw!")
+elif reach < distance - tolerance:
+    print("You didn't throw far enough.")
+else:
+    print("You threw too far.")
 ```
 ```
-
-```
-```
-
-```
-```
-
-```
-```
-
+>>> %Run 1.py
+How far away is your friend?(m)1
+How fast can you throw?(m/s)1
+What angle do you want to throw at?(degrees)1
+Nice throw!
+>>> %Run 1.py
+How far away is your friend?(m)10
+How fast can you throw?(m/s)9
+What angle do you want to throw at?(degrees)2
+You didn't throw far enough.
+>>> %Run 1.py
+How far away is your friend?(m)10
+How fast can you throw?(m/s)180
+What angle do you want to throw at?(degrees)1
+You threw too far.
 ```

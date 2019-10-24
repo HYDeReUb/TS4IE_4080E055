@@ -1613,3 +1613,262 @@ How fast can you throw?(m/s)180
 What angle do you want to throw at?(degrees)1
 You threw too far.
 ```
+```
+# 34-2
+import random
+choice = input("Choose rock, paper, or scissors: ")
+r = random.random()
+if r < 1/3:
+    print("Computer chose rock.")
+    if choice == "paper":
+        print("You win!")
+    elif choice == "scissors":
+        print("You lose.")
+    else:
+        print("Tie.")
+elif 1/3 <= r < 2/3:
+    print("Computer chose paper.")
+    if choice == "scissors":
+        print("You win!")
+    elif choice == "rock":
+        print("You lose.")
+    else:
+        print("Tie.")
+else: 
+    print("Computer chose scissors.")
+    if choice == "rock":
+        print("You win!")
+    elif choice == "paper":
+        print("You lose.")
+    else:
+        print("Tie.")
+```
+```
+>>> %Run 1.py
+Choose rock, paper, or scissors: rock
+Computer chose scissors.
+You win!
+>>> %Run 1.py
+Choose rock, paper, or scissors: paper
+Computer chose scissors.
+You lose.
+>>> %Run 1.py
+Choose rock, paper, or scissors: scissors
+Computer chose scissors.
+Tie.
+```
+```
+# 34-3
+import time
+start = time.time()
+count = 0
+for i in range(1000000):
+    count += 1
+end = time.time()
+print(end-start, "seconds")
+```
+```
+0.916151762008667 seconds
+```
+# CH-35
+```
+# 35-1
+import tkinter
+window = tkinter.Tk()
+window.geometry("800x200")
+window.title("My first GUI")
+window.configure(background="grey")
+window.mainloop()
+```
+```
+(My_First_GUI0.png)
+```
+```
+# 35-2
+import tkinter
+window = tkinter.Tk()
+window.geometry("800x200")
+window.title("My first GUI")
+window.configure(background="grey")
+red = tkinter.Button(window, text="Red", bg="red")
+red.pack()
+yellow = tkinter.Button(window, text="Yellow", bg="yellow")
+yellow.pack()
+green = tkinter.Button(window, text="Green", bg="green")
+green.pack()
+textbox = tkinter.Entry(window)
+textbox.pack()
+colorlabel = tkinter.Label(window, height="10", width="10")
+colorlabel.pack()
+window.mainloop()
+```
+```
+(My_First_GUI1.png)
+```
+```
+# 35-3
+import tkinter
+def change_color(): 
+    window.configure(background="white")
+window = tkinter.Tk()
+window.geometry("800x200")
+window.title("My first GUI")
+window.configure(background="grey")
+white = tkinter.Button(window, text="Click", command=change_color)
+white.pack()
+window.mainloop()
+```
+```
+(My_First_GUI2.png)
+(My_First_GUI3.png)
+```
+```
+# 35-4
+import tkinter
+import time 
+def countdown(): 
+    countlabel.configure(background="white")
+    howlong = int(textbox.get()) 
+    for i in range(howlong, 0, -1):
+        countlabel.configure(text=i)
+        window.update()
+        time.sleep(1) 
+    countlabel.configure(text="DONE!") 
+window = tkinter.Tk()
+window.geometry("800x600")
+window.title("My first GUI")
+window.configure(background="grey")
+lbl=tkinter.Label(window,text="How many seconds to count down?")
+lbl.pack()
+textbox = tkinter.Entry(window) 
+textbox.pack()
+count = tkinter.Button(window, text="Countdown!",command=countdown) 
+count.pack()
+countlabel = tkinter.Label(window, height="10", width="10")
+countlabel.pack()
+window.mainloop()
+```
+```
+(My_First_GUI4.png)
+(My_First_GUI5.png)
+(My_First_GUI6.png)
+```
+# CH-37
+```
+# 37-1
+import unittest
+class TestMyCode(unittest.TestCase):
+    def test_addition_2_2(self):
+        self.assertEqual(2+2, 4)
+    def test_subtraction_2_2(self):
+        self.assertNotEqual(2-2, 4)
+unittest.main()
+```
+```
+..
+----------------------------------------------------------------------
+Ran 2 tests in 0.001s
+
+OK
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+```
+```
+# 37-2
+def is_prime(n):
+    prime = True
+    for i in range(1, n):
+        if n%i == 0:
+            prime = False
+    return prime
+def absolute_value(n):
+    if n < 0:
+        return n
+    elif n > 0:
+        return n
+```
+```
+(Unknown answer)
+```
+```
+# 37-3
+import unittest
+import funcs
+class TestPrime(unittest.TestCase):
+    def test_prime_5(self):
+        isprime = funcs.is_prime(5)
+        self.assertEqual(isprime, True)
+    def test_prime_4(self):
+        isprime = funcs.is_prime(4)
+        self.assertEqual(isprime, False)
+    def test_prime_10000(self):
+        isprime = funcs.is_prime(10000)
+        self.assertEqual(isprime, False)
+class TestAbs(unittest.TestCase):
+    def test_abs_5(self):
+        absolute = funcs.absolute_value(5)
+        self.assertEqual(absolute, 5)
+    def test_abs_neg5(self):
+        absolute = funcs.absolute_value(-5)
+        self.assertEqual(absolute, 5)
+    def test_abs_0(self):
+        absolute = funcs.absolute_value(0)
+        self.assertEqual(absolute, 0)
+unittest.main()      
+```
+```
+ModuleNotFoundError                       Traceback (most recent call last)
+<ipython-input-3-85196dd8bb48> in <module>()
+      1 import unittest
+----> 2 import funcs
+      3 class TestPrime(unittest.TestCase):
+      4     def test_prime_5(self):
+      5         isprime = funcs.is_prime(5)
+
+ModuleNotFoundError: No module named 'funcs'
+```
+# A
+```
+# A-2
+class Fraction:
+    def __init__(self, top, bottom):
+        self.top = top 
+        self.bottom = bottom
+    def __add__(self, other_fraction):
+        new_top = self.top*other_fraction.bottom + \ self.bottom*other_fraction.top
+        new_bottom = self.bottom*other_fraction.bottom
+        return Fraction(new_top, new_bottom)
+    def __mul__(self, other_fraction):
+        new_top = self.top*other_fraction.top
+        new_bottom = self.bottom*other_fraction.bottom
+        return Fraction(new_top, new_bottom)
+```
+```
+File "<ipython-input-4-a381d92e916c>", line 6
+    new_top = self.top*other_fraction.bottom + \ self.bottom*other_fraction.top
+                                                                               ^
+SyntaxError: unexpected character after line continuation character
+```
+```
+# A-3
+class Fraction:
+    def __init__(self, top, bottom):
+        self.top = top 
+        self.bottom = bottom
+    def __add__(self, other_fraction):
+        new_top = self.top*other_fraction.bottom + \ self.bottom*other_fraction.top
+        new_bottom = self.bottom*other_fraction.bottom
+        return Fraction(new_top, new_bottom)
+    def __mul__(self, other_fraction):
+        new_top = self.top*other_fraction.top
+        new_bottom = self.bottom*other_fraction.bottom
+        return Fraction(new_top, new_bottom)
+    def __str__(self):
+        return str(self.top)+"/"+str(self.bottom)
+```
+```
+ File "<ipython-input-5-b62c0d9c77ca>", line 6
+    new_top = self.top*other_fraction.bottom + \ self.bottom*other_fraction.top
+                                                                               ^
+SyntaxError: unexpected character after line continuation character
+```

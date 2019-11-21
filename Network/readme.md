@@ -153,7 +153,7 @@ ICMP 封包格式，其各欄位功能如下：
 17 Address Mask Request（位址遮罩要求）
 18 Address Mask Reply（位址遮罩回覆）
 ```
-###ICMP Destination Unreachable（目的地無法到達，Type 3）
+### ICMP Destination Unreachable（目的地無法到達，Type 3）
 ```
 0: Network Unreachable（無法到達目的網路）
 1: Host Unreachable（無法到達目的主機）

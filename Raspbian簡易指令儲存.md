@@ -48,7 +48,7 @@ sudo chmod 447(最大權限777) /dev/vchiq
 ```
 ## CPU100% 10次壓力溫度測試(腳本)
 ```
-(參考自ExplainingComputers.com)
+(來自ExplainingComputers.com)
 #! /bin/bash
 clear
 

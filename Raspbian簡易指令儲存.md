@@ -34,7 +34,7 @@ sudo apt-get remove --purge '(套件名稱)'
 ```
 vcgencmd measure_temp
 ```
-## 移除USB
+## 卸載USB
 ```
 sudo eject /dev/sdXX(移除指定的Device裝置,用fdisk -l 檢視裝置)
 ```

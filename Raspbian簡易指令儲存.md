@@ -46,6 +46,19 @@ sudo chmod 447(最大權限777) /dev/vchiq
 ```
 (cd位置目標設定)chmod u+x P.sh (P是檔案名稱，副檔名為.sh)
 ```
+## CPU100% 10次壓力溫度測試(腳本)
+```
+#! /bin/bash
+clear
+
+for x in {1..10}
+do
+  vcgencmd measure_temp
+  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1
+done
+ 
+vcgencmd measure_temp
+```
 -----------------------------------------------------
 ## 其他
 ##### >(建立文字檔)

@@ -11,11 +11,11 @@ sudo add-apt-repository --remove ppa:
 sudo apt-get install 'exfat-utils'
 sudo apt-get install 'exfat-fuse'
 ```
-省略的
+#### 省略的
 ```
 sudo apt-get install 'exfat-*'
 ```
-舊版用法
+#### 舊版用法
 ```
 sudo apt-add-repository ppa:relan/exfat
 sudo apt-get update

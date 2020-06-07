@@ -24,7 +24,7 @@ sudo apt-get install 'exfat-fuse'
 ```
 ## 安裝.deb檔
 ```
-(先用"cd"位置目標設定)sudo dpkg -i *.deb
+(先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb
 ```
 ## 移除套件
 ```
@@ -48,7 +48,7 @@ sudo chmod 447(最大權限777) /dev/vchiq
 ```
 ## 給予使用Bash權限
 ```
-(cd位置目標設定)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")
+(先用"cd"調整該檔資料夾的位置)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")
 ```
 ## CPU100% 10次壓力溫度測試(腳本)
 ```

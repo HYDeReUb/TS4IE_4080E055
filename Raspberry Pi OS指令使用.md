@@ -30,9 +30,13 @@ sudo apt-get install 'exfat-fuse'
 ```
 sudo apt-get remove --purge '(套件名稱)'
 ```
-## 溫度查詢
+## 溫度狀態
 ```
 vcgencmd measure_temp
+```
+## 時鐘速度狀態
+```
+watch -n 0 vcgencmd measure_clock arm  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)
 ```
 ## 卸載USB
 ```

@@ -15,7 +15,7 @@ sudo apt-get install 'exfat-fuse'
 ```
 sudo apt-get install 'exfat-*'
 ```
-#### 舊版用法
+#### 舊版(無法更新)用法
 ```
 sudo apt-add-repository ppa:relan/exfat
 sudo apt-get update

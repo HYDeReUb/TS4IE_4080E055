@@ -50,7 +50,7 @@ sudo chmod 447(最大權限777) /dev/vchiq
 ```
 (先用"cd"調整該檔資料夾的位置)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")
 ```
-## CPU100% 10次壓力溫度測試(腳本)
+## CPU100% 10次壓力溫度測試(sh腳本)
 ```
 (來自ExplainingComputers.com)
 #! /bin/bash

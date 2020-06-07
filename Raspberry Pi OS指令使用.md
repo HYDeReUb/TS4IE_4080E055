@@ -24,7 +24,7 @@ sudo apt-get install 'exfat-fuse'
 ```
 ## 安裝.deb檔
 ```
-(cd位置目標設定)sudo dpkg -i *.deb
+(先用"cd"位置目標設定)sudo dpkg -i *.deb
 ```
 ## 移除套件
 ```
@@ -36,7 +36,7 @@ vcgencmd measure_temp
 ```
 ## 卸載USB
 ```
-sudo eject /dev/sdXX(移除指定的Device裝置,用fdisk -l 檢視裝置)
+sudo eject /dev/sdXX(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)
 ```
 ## vchiq影片播放問題
 ```
@@ -44,7 +44,7 @@ sudo chmod 447(最大權限777) /dev/vchiq
 ```
 ## 給予使用Bash權限
 ```
-(cd位置目標設定)chmod u+x P.sh (P是檔案名稱，副檔名為.sh)
+(cd位置目標設定)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")
 ```
 ## CPU100% 10次壓力溫度測試(腳本)
 ```

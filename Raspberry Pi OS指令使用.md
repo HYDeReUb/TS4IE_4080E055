@@ -13,7 +13,7 @@ sudo apt-get install 'exfat-fuse'
 ```
 #### 省略的
 ```
-sudo apt-get install 'exfat-*'
+sudo apt install 'exfat-*'
 ```
 #### 舊版(無法更新)用法
 ```

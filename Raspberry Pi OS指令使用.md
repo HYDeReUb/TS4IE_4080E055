@@ -38,6 +38,10 @@ sudo apt-get install 'exfat-fuse'
 ```
 (先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb
 ```
+## 安裝套件
+```
+sudo apt install (套件名稱)
+```
 ## 移除套件
 ```
 sudo apt purge (套件名稱) (需要時再改成apt-get)

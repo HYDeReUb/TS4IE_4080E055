@@ -1,3 +1,15 @@
+## 更新
+```
+sudo apt update  (需要時再改成apt-get)
+```
+## 升級
+```
+sudo apt upgrade (需要時再改成apt-get)
+```
+## 完整升級
+```
+sudo apt full-upgrade (需要時再改成apt-get)
+```
 ## 新增 PPA 個人套件庫
 ```
 sudo add-apt-repository ppa:
@@ -8,8 +20,8 @@ sudo add-apt-repository --remove ppa:
 ```
 ## 支援exFAT(FAT64)
 ```
-sudo apt-get install 'exfat-utils'
-sudo apt-get install 'exfat-fuse'
+sudo apt install 'exfat-utils' (需要時再改成apt-get)
+sudo apt install 'exfat-fuse' (需要時再改成apt-get)
 ```
 #### 省略的
 ```
@@ -28,7 +40,11 @@ sudo apt-get install 'exfat-fuse'
 ```
 ## 移除套件
 ```
-sudo apt-get remove --purge '(套件名稱)'
+sudo apt purge (套件名稱) (需要時再改成apt-get)
+```
+或
+```
+sudo apt remove --purge '(套件名稱)' (需要時再改成apt-get)
 ```
 ## 溫度狀態
 ```
@@ -66,9 +82,9 @@ vcgencmd measure_temp
 ```
 ## 印表機套件
 ```
-sudo apt install libcups2-dev
-sudo apt install cups
-sudo apt install system-config-printer
+sudo apt install libcups2-dev (需要時再改成apt-get)
+sudo apt install cups (需要時再改成apt-get)
+sudo apt install system-config-printer (需要時再改成apt-get)
 ```
 -----------------------------------------------------
 ## 其他

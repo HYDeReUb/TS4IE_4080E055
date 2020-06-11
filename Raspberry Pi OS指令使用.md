@@ -18,22 +18,6 @@ sudo add-apt-repository ppa:
 ```
 sudo add-apt-repository --remove ppa:
 ```
-## 支援exFAT(FAT64)
-```
-sudo apt install 'exfat-utils' (需要時再改成apt-get)
-sudo apt install 'exfat-fuse' (需要時再改成apt-get)
-```
-#### 省略的
-```
-sudo apt install 'exfat-*'
-```
-#### 舊版(無法更新)用法
-```
-sudo apt-add-repository ppa:relan/exfat
-sudo apt-get update
-sudo apt-get install 'exfat-utils'
-sudo apt-get install 'exfat-fuse'
-```
 ## 安裝.deb檔
 ```
 (先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb
@@ -84,11 +68,33 @@ done
  
 vcgencmd measure_temp
 ```
-## 印表機套件
+-----------------------------------------------------
+# 已知套件
+## 支援exFAT(FAT64)
+```
+sudo apt install 'exfat-utils' (需要時再改成apt-get)
+sudo apt install 'exfat-fuse' (需要時再改成apt-get)
+```
+#### 省略的
+```
+sudo apt install 'exfat-*'
+```
+#### 舊版(無法更新)用法
+```
+sudo apt-add-repository ppa:relan/exfat
+sudo apt-get update
+sudo apt-get install 'exfat-utils'
+sudo apt-get install 'exfat-fuse'
+```
+## 印表機
 ```
 sudo apt install libcups2-dev (需要時再改成apt-get)
 sudo apt install cups (需要時再改成apt-get)
 sudo apt install system-config-printer (需要時再改成apt-get)
+```
+## 光碟機
+```
+sudo apt install k3b (需要時再改成apt-get)
 ```
 -----------------------------------------------------
 ## 其他

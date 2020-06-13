@@ -1,3 +1,4 @@
+# APT運用
 ## 更新
 ```
 sudo apt update  (需要時再改成apt-get)
@@ -8,7 +9,7 @@ sudo apt upgrade (需要時再改成apt-get)
 ```
 ## 完整升級
 ```
-sudo apt full-upgrade (需要時再改成apt-get)
+sudo apt full-upgrade (apt-get為另一條指令，無法套用)
 ```
 ## 新增 PPA 個人套件庫
 ```
@@ -24,7 +25,7 @@ sudo add-apt-repository --remove ppa:
 ```
 ## 安裝套件
 ```
-sudo apt install (套件名稱)
+sudo apt install (套件名稱) (需要時再改成apt-get)
 ```
 ## 移除套件
 ```
@@ -34,39 +35,17 @@ sudo apt purge (套件名稱) (需要時再改成apt-get)
 ```
 sudo apt remove --purge '(套件名稱)' (需要時再改成apt-get)
 ```
-## 溫度狀態
+## 自動移除套件(相依套件)
 ```
-vcgencmd measure_temp
+sudo apt autoremove (需要時再改成apt-get)
 ```
-## 時鐘速度狀態
+## 清除之前安裝(install)的安裝檔
 ```
-watch -n 0 vcgencmd measure_clock arm  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)
+sudo apt clean (需要時再改成apt-get)
 ```
-## 卸載USB
+## 清除之前下載的安裝檔，但不刪除已安裝軟體的安裝檔
 ```
-sudo eject /dev/sdXX(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)
-```
-## vchiq影片播放問題
-```
-sudo chmod 447(最大權限777) /dev/vchiq
-```
-## 給予使用Bash權限
-```
-(先用"cd"調整該檔資料夾的位置)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")
-```
-## CPU100% 10次壓力溫度測試(sh腳本)
-```
-(來自ExplainingComputers.com)
-#! /bin/bash
-clear
-
-for x in {1..10}
-do
-  vcgencmd measure_temp
-  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1
-done
- 
-vcgencmd measure_temp
+sudo apt autoclean (需要時再改成apt-get)
 ```
 -----------------------------------------------------
 # 已知套件
@@ -134,7 +113,42 @@ sudo apt install kdenlive
 sudo apt install gimp
 ```
 -----------------------------------------------------
-## 其他
+# 其他操作
+## 溫度狀態
+```
+vcgencmd measure_temp
+```
+## 時鐘速度狀態
+```
+watch -n 0 vcgencmd measure_clock arm  ("0"為0.1秒刷新。若改為"1"為1秒刷新、"2"為2秒刷新，以此類推)
+```
+## 卸載USB
+```
+sudo eject /dev/sdXX(XX是移除該位置的裝置。可以用"fdisk -l"檢視該裝置的位置)
+```
+## vchiq影片播放問題
+```
+sudo chmod 447(最大權限777) /dev/vchiq
+```
+## 給予使用Bash權限
+```
+(先用"cd"調整該檔資料夾的位置)chmod u+x P.sh ("P"是檔案名稱，副檔名為".sh")
+```
+## CPU100% 10次壓力溫度測試(sh腳本)
+```
+(來自ExplainingComputers.com)
+#! /bin/bash
+clear
+
+for x in {1..10}
+do
+  vcgencmd measure_temp
+  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run >/dev/null 2>&1
+done
+ 
+vcgencmd measure_temp
+```
+-----------------------------------------------------
 ##### >(建立檔案)
 ##### touch(建立檔案或修改檔案時間)
 ##### cat(瀏覽或編輯文字檔)

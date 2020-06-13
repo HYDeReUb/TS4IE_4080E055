@@ -99,6 +99,7 @@ sudo apt install cups
 sudo apt install system-config-printer
 ```
 ## 光碟燒錄軟體
+#### 注意!!請在足夠的電源下再使用
 ### K3b
 ```
 sudo apt install k3b
@@ -112,6 +113,7 @@ sudo apt install xfburn
 sudo apt install eog
 ```
 ## GNOME磁碟(可執行格式化＆完整格式化)
+### 極度建議！！請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
 ```
 sudo apt install gnome-disk-utility
 ```

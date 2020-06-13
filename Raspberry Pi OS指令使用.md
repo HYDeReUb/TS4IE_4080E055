@@ -1,4 +1,3 @@
-<span style="color:blue">some *blue* text</span>
 # APT運用
 ## 更新
 ```

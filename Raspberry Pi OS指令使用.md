@@ -1,4 +1,4 @@
-- ![#f03c15] `#f03c15`
+<span style="color:blue">some *blue* text</span>
 # APT運用
 ## 更新
 ```

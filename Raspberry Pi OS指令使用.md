@@ -86,15 +86,48 @@ sudo apt-get update
 sudo apt-get install 'exfat-utils'
 sudo apt-get install 'exfat-fuse'
 ```
+## 支援NTFS
+```
+sudo apt install ntfs-3g-dev
+```
 ## 印表機
 ```
 sudo apt install libcups2-dev (需要時再改成apt-get)
 sudo apt install cups (需要時再改成apt-get)
 sudo apt install system-config-printer (需要時再改成apt-get)
 ```
-## 光碟機
+## 光碟燒錄軟體
+### K3b
 ```
 sudo apt install k3b (需要時再改成apt-get)
+```
+### Xfburn
+```
+sudo apt install xfburn (需要時再改成apt-get)
+```
+## GNOME影像檢視器(可順利跑GIF檔)
+```
+sudo apt install eog
+```
+## GNOME磁碟(可執行格式化＆完整格式化)
+```
+sudo apt install gnome-disk-utility
+```
+## Nautilus檔案瀏覽器(GNOME檔案瀏覽器)
+```
+sudo apt install nautilus
+```
+## GParted(硬碟分割區軟體)
+```
+sudo apt install gparted
+```
+## Kdenlive(影片編輯器)
+```
+sudo apt install kdenlive
+```
+## GIMP(圖像編輯器)
+```
+sudo apt install gimp
 ```
 -----------------------------------------------------
 ## 其他

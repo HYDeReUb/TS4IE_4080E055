@@ -69,11 +69,11 @@ done
 vcgencmd measure_temp
 ```
 -----------------------------------------------------
-# 已知套件
+# 已知套件 ("apt"有問題的話再改成"apt-get"看看)
 ## 支援exFAT(FAT64)
 ```
-sudo apt install 'exfat-utils' (需要時再改成apt-get)
-sudo apt install 'exfat-fuse' (需要時再改成apt-get)
+sudo apt install 'exfat-utils'
+sudo apt install 'exfat-fuse'
 ```
 #### 省略的
 ```
@@ -92,18 +92,18 @@ sudo apt install ntfs-3g-dev
 ```
 ## 印表機
 ```
-sudo apt install libcups2-dev (需要時再改成apt-get)
-sudo apt install cups (需要時再改成apt-get)
-sudo apt install system-config-printer (需要時再改成apt-get)
+sudo apt install libcups2-dev
+sudo apt install cups
+sudo apt install system-config-printer
 ```
 ## 光碟燒錄軟體
 ### K3b
 ```
-sudo apt install k3b (需要時再改成apt-get)
+sudo apt install k3b
 ```
 ### Xfburn
 ```
-sudo apt install xfburn (需要時再改成apt-get)
+sudo apt install xfburn
 ```
 ## GNOME影像檢視器(可順利跑GIF檔)
 ```

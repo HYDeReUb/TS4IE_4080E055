@@ -19,10 +19,6 @@ sudo add-apt-repository ppa:
 ```
 sudo add-apt-repository --remove ppa:
 ```
-## 安裝.deb檔
-```
-(先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb
-```
 ## 安裝套件
 ```
 sudo apt install (套件名稱) (需要時再改成apt-get)
@@ -114,6 +110,10 @@ sudo apt install gimp
 ```
 -----------------------------------------------------
 # 其他操作
+## 安裝.deb檔
+```
+(先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb
+```
 ## 溫度狀態
 ```
 vcgencmd measure_temp

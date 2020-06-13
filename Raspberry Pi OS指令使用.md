@@ -69,7 +69,8 @@ done
 vcgencmd measure_temp
 ```
 -----------------------------------------------------
-# 已知套件 ("apt"有問題的話再改成"apt-get"看看)
+# 已知套件
+##### ("apt"有問題的話再改成"apt-get"看看)
 ## 支援exFAT(FAT64)
 ```
 sudo apt install 'exfat-utils'

@@ -88,7 +88,7 @@ sudo apt install xfburn
 sudo apt install eog
 ```
 ## GNOME磁碟(可執行格式化＆完整格式化)
-#### 極度建議！！格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
+#### 建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
 ```
 sudo apt install gnome-disk-utility
 ```

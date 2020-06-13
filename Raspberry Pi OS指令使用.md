@@ -49,8 +49,8 @@ sudo apt autoclean (需要時再改成apt-get)
 
 ## 支援exFAT(FAT64)
 ```
-sudo apt install 'exfat-utils'
-sudo apt install 'exfat-fuse'
+sudo apt install exfat-utils
+sudo apt install exfat-fuse
 ```
 #### 省略的
 ```
@@ -107,6 +107,14 @@ sudo apt install kdenlive
 ## GIMP(圖像編輯器)
 ```
 sudo apt install gimp
+```
+## Calibre(電子書軟體)
+```
+sudo apt install calibre
+```
+## Firefox瀏覽器
+```
+sudo apt install firefox-esr
 ```
 -----------------------------------------------------
 # 其他指令

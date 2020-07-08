@@ -1,7 +1,7 @@
 # 相關網址
 ## 下載區
-#### 一開始不確定要用哪個系統和不會燒錄SD卡者，可以選NOOBS使用
-#### 若確定要使用哪個系統但猶豫選擇或不太會操作者，推薦他們自家的 Raspberry Pi Imager
+一開始不確定要用哪個系統和不會燒錄SD卡者，可以選NOOBS使用<
+若確定要使用哪個系統但猶豫選擇或不太會操作者，推薦他們自家的 Raspberry Pi Imager
 ```
 https://www.raspberrypi.org/downloads/
 ```
@@ -72,7 +72,7 @@ sudo apt autoclean (需要時再改成apt-get)
 ```
 -----------------------------------------------------
 # 已知套件
-#### "apt"有問題的話再改成"apt-get"看看
+"apt"有問題的話再改成"apt-get"看看
 
 ## 支援exFAT(FAT64)
 ```
@@ -101,7 +101,7 @@ sudo apt install cups
 sudo apt install system-config-printer
 ```
 ## 光碟燒錄軟體
-#### 注意!!請在足夠的電源下再使用
+注意!!請在足夠的電源下再使用
 ### K3b
 ```
 sudo apt install k3b
@@ -115,7 +115,7 @@ sudo apt install xfburn
 sudo apt install eog
 ```
 ## GNOME磁碟(可執行格式化＆完整格式化)
-#### 建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
+建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
 ```
 sudo apt install gnome-disk-utility
 ```

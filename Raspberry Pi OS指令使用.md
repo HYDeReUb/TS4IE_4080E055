@@ -8,7 +8,12 @@ https://www.raspberrypi.org/downloads/
 ## 保護您的Raspberry Pi(Raspberry Pi OS)
 在基礎設定下完成之後，由於裡面設定還是預設狀態，而pi使用者跟Windows的系統管理員權限相當，可能會有入侵風險(帶有防火牆的路由器是安全，但也建議做)，下列操作是個人增加安全性的方法
 ```
-1.用passwd更改pi的密碼2.安裝ufw防火牆套件(詳細參見第二個網址)並設定3.開始新增使用者名稱(也就是之後主要的用戶)並給予權限(詳細參見第一個網址的3、4條指令)4.要求pi用戶使用sudo時要用戶密碼(詳細參見第一個網址的9、10條指令，vi的用法在很下面)5.使用sudo passwd指令來設定UNIX密碼(之後若把Pi鎖住或刪除時要使用Root權限或sudo無法使用時，這是唯一後路)6.切換使用者後用sudo passwd --lock pi來鎖定pi(解鎖sudo passwd --unlock pi)，或刪除pi(詳細參見第一個網址的6~8條指令)，但我不建議對pi做刪除的動作，以防跟pi有關的問題發生
+1.用passwd更改pi的密碼
+2.安裝ufw防火牆套件(詳細參見第二個網址)並設定
+3.開始新增使用者名稱(也就是之後主要的用戶)並給予權限(詳細參見第一個網址的3、4條指令)
+4.要求pi用戶使用sudo時要用戶密碼(詳細參見第一個網址的9、10條指令，vi的用法在很下面)
+5.使用sudo passwd指令來設定UNIX密碼(之後若把Pi鎖住或刪除時要使用Root權限或sudo無法使用時，這是唯一後路)
+6.切換使用者後用sudo passwd --lock pi來鎖定pi(解鎖sudo passwd --unlock pi)，或刪除pi(詳細參見第一個網址的6~8條指令)，但我不建議對pi做刪除的動作，以防跟pi有關的問題發生
 ```
 ```
 https://www.raspberrypi.org/documentation/configuration/security.md

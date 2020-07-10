@@ -100,18 +100,14 @@ sudo apt install cups
 sudo apt install system-config-printer
 ```
 ## 光碟燒錄軟體
-注意!!請在足夠的電源下再使用
-### K3b
+注意!!請在足夠的電源下再使用光碟機!!!
+### K3b(比較推薦)
 ```
 sudo apt install k3b
 ```
-### Xfburn
+### Xfburn(易於操作)
 ```
 sudo apt install xfburn
-```
-## GNOME影像檢視器(可順利跑GIF檔)
-```
-sudo apt install eog
 ```
 ## GNOME磁碟(可執行格式化＆完整格式化)
 建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
@@ -126,6 +122,10 @@ sudo apt install nautilus
 ```
 sudo apt install gparted
 ```
+## Audacity(錄音與音訊編輯器，須搭配USB聲卡使用)
+```
+sudo apt install audacity
+```
 ## Kdenlive(影片編輯器)
 ```
 sudo apt install kdenlive
@@ -134,6 +134,10 @@ sudo apt install kdenlive
 ```
 sudo apt install gimp
 ```
+## GNOME影像檢視器(可順利跑GIF檔，BCM2835無法)
+```
+sudo apt install eog
+```
 ## Calibre(電子書軟體)
 ```
 sudo apt install calibre
@@ -141,6 +145,10 @@ sudo apt install calibre
 ## Firefox瀏覽器
 ```
 sudo apt install firefox-esr
+```
+## Chromium瀏覽器
+```
+sudo apt install chromium-browser
 ```
 # 其他指令
 ## 安裝.deb檔

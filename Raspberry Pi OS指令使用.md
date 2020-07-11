@@ -7,13 +7,13 @@ https://www.raspberrypi.org/downloads/
 ```
 ## 保護您的Raspberry Pi(Raspberry Pi OS)
 在基礎設定下完成之後，由於裡面設定還是預設狀態，而預設用戶pi跟Windows的Administrator權限相當，可能會有入侵風險(帶有防火牆的路由器雖安全，但也建議做)，下列操作是個人增加安全性的方法
-<br>
-1.用passwd更改pi的密碼
-2.安裝ufw防火牆套件(詳細參見第二個網址)並設定
-3.開始新增使用者名稱(也就是之後主要的用戶)並給予權限(詳細參見第一個網址的3、4條指令)
-4.要求pi用戶使用sudo時要用戶密碼(詳細參見第一個網址的9、10條指令，vi的用法在倒數第二個)
-5.使用sudo passwd指令來設定UNIX密碼(就是超級使用者(root)的密碼，權限跟Administrator相當，之後若把Pi鎖住或刪除時剛好sudo權限突然無法使用時，這應該是唯一後路了)(之後要切入超級使用者模式時，輸入su指令後打UNIX密碼即可進入超級使用者(root)模式，符號會從＄變成＃，若非必要盡量別常用)(設定後可能會有鎖定目標暴力破解的問題，可以去看第三個網址來防止遠端SSH登入root的問題，雖然已經有ufw防護就是了...)
-6.切換使用者後用sudo passwd --lock pi來鎖定pi(解鎖sudo passwd --unlock pi)，或刪除pi(詳細參見第一個網址的6~8條指令)，但我不建議對pi做刪除的動作，以防跟pi有關的問題發生
+<br><br><br>
+1.用passwd更改pi的密碼<br>
+2.安裝ufw防火牆套件(詳細參見第二個網址)並設定<br>
+3.開始新增使用者名稱(也就是之後主要的用戶)並給予權限(詳細參見第一個網址的3、4條指令)<br>
+4.要求pi用戶使用sudo時要用戶密碼(詳細參見第一個網址的9、10條指令，vi的用法在倒數第二個)<br>
+5.使用sudo passwd指令來設定UNIX密碼(就是超級使用者(root)的密碼，權限跟Administrator相當，之後若把Pi鎖住或刪除時剛好sudo權限突然無法使用時，這應該是唯一後路了)(之後要切入超級使用者模式時，輸入su指令後打UNIX密碼即可進入超級使用者(root)模式，符號會從＄變成＃，若非必要盡量別常用)(設定後可能會有鎖定目標暴力破解的問題，可以去看第三個網址來防止遠端SSH登入root的問題，雖然已經有ufw防護就是了...)<br>
+6.切換使用者後用sudo passwd --lock pi來鎖定pi(解鎖sudo passwd --unlock pi)，或刪除pi(詳細參見第一個網址的6~8條指令)，但我不建議對pi做刪除的動作，以防跟pi有關的問題發生<br>
 ```
 https://www.raspberrypi.org/documentation/configuration/security.md
 ```

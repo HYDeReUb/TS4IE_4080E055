@@ -7,7 +7,7 @@ https://www.raspberrypi.org/downloads/
 ```
 ## 保護您的Raspberry Pi(Raspberry Pi OS)
 在基礎設定下完成之後，由於裡面設定還是預設狀態，而預設用戶pi跟Windows的Administrator權限相當，可能會有入侵風險(帶有防火牆的路由器雖安全，但也建議做)，下列操作是個人增加安全性的方法
-<br><br><br>
+<br><br>
 1.用passwd更改pi的密碼<br>
 2.安裝ufw防火牆套件(詳細參見第二個網址)並設定<br>
 3.開始新增使用者名稱(也就是之後主要的用戶)並給予權限(詳細參見第一個網址的3、4條指令)<br>

@@ -140,11 +140,11 @@ sudo apt install gimp
 ```
 sudo apt install eog
 ```
-## Calibre(電子書軟體)
+## calibre(電子書軟體)
 ```
 sudo apt install calibre
 ```
-## Firefox瀏覽器
+## Firefox瀏覽器(Firefox ESR)
 ```
 sudo apt install firefox-esr
 ```

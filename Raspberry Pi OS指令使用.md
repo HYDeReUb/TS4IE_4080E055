@@ -74,8 +74,7 @@ sudo apt clean (需要時再改成apt-get)
 sudo apt autoclean (需要時再改成apt-get)
 ```
 # 已知套件
-"apt"有問題的話再改成"apt-get"看看
-
+"apt"有問題的話再改成"apt-get"看看<br>
 ## 支援exFAT(FAT64)
 ```
 sudo apt install exfat-utils
@@ -112,18 +111,18 @@ sudo apt install k3b
 ```
 sudo apt install xfburn
 ```
-## GNOME磁碟(可執行格式化＆完整格式化)
+## GNOME磁碟(可執行快速、完整格式化＆關閉磁碟機動作等)
 建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
 ```
 sudo apt install gnome-disk-utility
 ```
-## Nautilus檔案瀏覽器(GNOME檔案瀏覽器)
-```
-sudo apt install nautilus
-```
 ## GParted(硬碟分割區軟體)
 ```
 sudo apt install gparted
+```
+## Nautilus檔案瀏覽器(GNOME檔案瀏覽器)
+```
+sudo apt install nautilus
 ```
 ## Audacity(錄音與音訊編輯器，須搭配USB聲卡使用)
 ```

@@ -101,7 +101,7 @@ sudo apt install libcups2-dev
 sudo apt install cups
 sudo apt install system-config-printer
 ```
-## 光碟燒錄軟體
+## 光碟燒錄
 注意!!請在足夠的電源下再使用光碟機!!!
 ### K3b(比較推薦)
 ```

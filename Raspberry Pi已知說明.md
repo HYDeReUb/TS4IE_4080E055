@@ -13,7 +13,7 @@
 這代表著溫度已經到達80~85°C，會調降CPU時鐘性能，需要更換或使用主動式散熱或被動式散熱
 ```
 ```
-造成的影響:可能導致機器跟週邊的運行壽命縮短
+**造成的影響:可能導致機器跟週邊的運行壽命縮短**
 ```
 ## 溫度過高(85°C以上)
 ![image](https://github.com/HYDeReUb/TS4IE_4080E055/blob/master/Picture%20Saved/over_temperature_85.png)

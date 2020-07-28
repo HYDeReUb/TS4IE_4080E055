@@ -191,7 +191,7 @@ done
  
 vcgencmd measure_temp
 ```
-# vi簡單用法(LX終端機)
+# vi簡單用法
 ## 操作模式
 ```
 a 由游標之後進行寫入模式

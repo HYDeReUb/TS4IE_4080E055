@@ -33,7 +33,7 @@
 適合:長時間運算操作、超頻玩家
 ```
 ## 被動散熱
-![image](https://github.com/HYDeReUb/TS4IE_4080E055/blob/master/Picture%20Saved/RPI_COOL_4XSI_02.png)
+![image](https://i.ytimg.com/vi/VJC6OpGpq0Y/maxresdefault.jpg)
 ```
 純粹利用傳導方式把熱導出來並慢慢消去而無使用風扇
 ```

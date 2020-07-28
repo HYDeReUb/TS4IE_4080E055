@@ -23,7 +23,7 @@
 ```
 造成的影響:可能導致機器跟週邊的運行壽命縮短甚至損壞
 ```
-## 主動散熱
+## 主動式散熱
 ![image](https://github.com/HYDeReUb/TS4IE_4080E055/blob/master/Picture%20Saved/maxresdefault.jpg)
 ```
 用風扇把熱氣帶走，需要時可以加散熱片一起使用
@@ -32,7 +32,7 @@
 好處:可以維持一定溫度不再上升
 適合:長時間運算操作、超頻玩家
 ```
-## 被動散熱
+## 被動式散熱
 ![image](https://i.ytimg.com/vi/VJC6OpGpq0Y/maxresdefault.jpg)
 ```
 純粹利用散熱片把熱導出來並慢慢消去而無使用風扇

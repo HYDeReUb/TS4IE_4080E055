@@ -1,3 +1,5 @@
+![image](https://www.raspberrypi.org/documentation/configuration/images/under_volt.png)
+# 其他已知問題
 ## USB部份
 ``` 
 1.若要提供SSD、HDD、光碟機這樣的高耗電外接裝置時，只能選一個來使用，若同時使用兩個會不夠電並發生問題

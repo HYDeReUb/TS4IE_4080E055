@@ -85,7 +85,7 @@ https://www.youtube.com/watch?v=2zrwjGcyM5s
 穩定程度"critical">"stable">"beta"(關鍵>穩定>測試)
 
 5-1.完成之後照影片方式重新啟動
-5-2.再次輸入"vcgencmd bootloader_version"查看預期是否和"pieeprom"後寫的日期一致
+5-2.再次輸入"vcgencmd bootloader_version"查看是否和"pieeprom"後寫的日期一致
 
 6-1.在影片的15:12中，插入日後要當主硬碟USB裝置後，並注意SD Card Copier的Copy from跟Copy to(from是指來源，to是指定到)，一旦反了就變成SD卡的資料消失了
 6-2.假如SD卡或USB裝置資料真的搞消失了日後也不需要在做4-1跟4-2的步驟，3-2若一開始有去改的話再去改一下就可以了

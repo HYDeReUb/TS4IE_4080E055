@@ -73,7 +73,7 @@ https://www.youtube.com/watch?v=2zrwjGcyM5s
 
 1.在打開"bootloader"資料夾後，要選擇"stable"資料夾而不是影片的"beta"資料夾，因為該影片發布時還沒有穩定版可用
 
-2.輸入"vcgencmd bootloader_version"後，他指定的第一行是要確認eeprom中的最後套件升級時間，而要支援USB開機就是要手動更新eeprom套件(如果日期是6月多可以先試試)
+2.輸入"vcgencmd bootloader_version"後，他指定的第一行是要確認eeprom中的最後套件升級時間，而要支援USB開機就是要手動更新eeprom套件(如果日期是2020-6月多可以從6-1開始試)
 
 3-1.而他接下來做的事情，其實中間省略的一個步驟，這個在他的說明欄最後兩段話有說明，我個人也是遵循他的方法(詳見4-3)，如果想按照官方作法，請看3-2，否則跳過
 3-2.使用"su"切換為root模式時，輸入"vi /etc/default/rpi-eeprom-update"並將"critical"改為"stable"，這個在第一個網址裡"Update the bootloder"裡的第二行"As root, edit"那一部分

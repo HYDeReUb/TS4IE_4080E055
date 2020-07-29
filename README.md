@@ -2,6 +2,11 @@
 # 紀錄：
 ### 20200728
 ```
+新增並更新"Raspberry Pi 4 Model B已知說明.md"的項目
+更新"Raspberry Pi OS指令使用.md"
+```
+### 20200728
+```
 更改"Raspberry Pi 4 Model B已知問題.md"為"Raspberry Pi 4 Model B已知說明.md"並更新
 新增"Raspberry Pi 4 Model B已知問題.md"
 更新"Raspberry Pi OS指令使用.md"

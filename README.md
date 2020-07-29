@@ -2,6 +2,7 @@
 # 紀錄：
 ### 20200729
 ```
+更新"Picture Saved"資料夾資訊
 新增並更新"Raspberry Pi 4 Model B已知說明.md"的項目
 更新"Raspberry Pi OS指令使用.md"
 ```

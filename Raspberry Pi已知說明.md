@@ -59,7 +59,7 @@
 2.GPIO不要做熱插拔的動作，更不能短路3V3接腳，否則易造成損壞
 ```
 # Raspberry Pi 4 Model B已知操作
-## 把USB當主硬碟開機(注意：這裡的操作只對Raspberry Pi OS有效而已，NOOBS跟其他OS可能無效)
+## 把USB儲存裝置當主硬碟開機(注意：這裡的操作只對Raspberry Pi OS有效而已，NOOBS跟其他OS可能無效)
 ```
 網址提供:
 

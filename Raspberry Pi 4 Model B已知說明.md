@@ -25,7 +25,7 @@
 造成的影響:可能導致機器跟週邊的運行壽命縮短甚至損壞
 ```
 ## 主動式散熱
-![image](https://github.com/HYDeReUb/TS4IE_4080E055/blob/master/Picture%20Saved/maxresdefault.jpg)
+![image](https://i.ytimg.com/vi/5Ud-grj4Zl0/maxresdefault.jpg)
 ```
 用風扇把熱氣帶走，需要時可以加散熱片一起使用
 ```

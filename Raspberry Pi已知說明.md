@@ -1,4 +1,4 @@
-# Raspberry Pi 已知說明
+### 事先警告:本文的部份操作是以我這裡的資訊整理出來，若有風險的地方還請自行負責！
 ## 降電壓
 ![image](https://github.com/HYDeReUb/TS4IE_4080E055/blob/master/Picture%20Saved/under_volt.png)
 ```

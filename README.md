@@ -1,5 +1,11 @@
 ## ///若想把樹莓派作為個人電腦使用的話，可以參考一下我寫的資料...///
 # 紀錄：
+### 20200810
+```
+更新"Raspberry Pi OS指令使用.md"
+更新"Raspberry Pi 4 Model B已知說明.md"
+初始設定的部份已由"Raspberry Pi OS指令使用.md"移到"Raspberry Pi 4 Model B已知說明.md"
+```
 ### 20200806
 ```
 更新"Raspberry Pi OS指令使用.md"

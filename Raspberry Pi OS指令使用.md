@@ -67,10 +67,6 @@ sudo apt-get install 'exfat-fuse'
 ```
 sudo apt install ntfs-3g-dev
 ```
-## 防火牆
-```
-sudo apt install gufw
-```
 ## 印表機
 ```
 sudo apt install libcups2-dev
@@ -86,6 +82,15 @@ sudo apt install k3b
 ### Xfburn(易於操作)
 ```
 sudo apt install xfburn
+```
+## 防火牆
+### GUFW(圖形介面，易於使用)
+```
+sudo apt install gufw
+```
+### UFW(需指令輸入，容量不佔空間)
+```
+sudo apt install ufw
 ```
 ## GNOME磁碟(可執行快速、完整格式化＆關閉磁碟機動作等)
 建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用

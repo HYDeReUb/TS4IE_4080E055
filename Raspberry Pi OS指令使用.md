@@ -133,6 +133,10 @@ sudo apt install firefox-esr
 ```
 sudo apt install chromium-browser
 ```
+## Back in Time(備份還原工具)
+```
+sudo apt install backintime-gnome
+```
 # 其他指令
 ## 安裝.deb檔
 ```

@@ -56,107 +56,90 @@ sudo apt autoclean (需要時再改成apt-get)
 sudo apt install exfat-utils
 sudo apt install exfat-fuse
 ```
-#### 省略的
+省略的
 ```
 sudo apt install 'exfat-*'
 ```
-#### 舊版(無法更新)
+舊版(無法更新)
 ```
 sudo apt-add-repository ppa:relan/exfat
 sudo apt-get update
 sudo apt-get install 'exfat-utils'
 sudo apt-get install 'exfat-fuse'
 ```
-<br>
 ## 支援NTFS
 ```
 sudo apt install ntfs-3g-dev
 ```
-<br>
 ## 印表機
 ```
 sudo apt install libcups2-dev
 sudo apt install cups
 sudo apt install system-config-printer
 ```
-<br>
 ## 光碟燒錄
-注意!!請在足夠的電源下再使用光碟機!!!
-### K3b(比較推薦)
+K3b(比較推薦)
 ```
 sudo apt install k3b
 ```
-### Xfburn(易於操作)
+Xfburn(易於操作)
 ```
 sudo apt install xfburn
 ```
-<br>
 ## 防火牆
-### GUFW(圖形介面，易於使用)
+GUFW(圖形介面，易於使用)
 ```
 sudo apt install gufw
 ```
-### UFW(需指令輸入，容量不佔空間)
+UFW(需指令輸入，容量不佔空間)
 ```
 sudo apt install ufw
 ```
-<br>
 ## GNOME磁碟(可執行快速、完整格式化＆關閉磁碟機動作等)
 建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
 ```
 sudo apt install gnome-disk-utility
 ```
-<br>
 ## GParted(硬碟分割區軟體)
 ```
 sudo apt install gparted
 ```
-<br>
 ## Nautilus檔案瀏覽器(GNOME檔案瀏覽器)
 ```
 sudo apt install nautilus
 ```
-<br>
 ## Audacity(錄音與音訊編輯器，須搭配USB聲卡使用)
 ```
 sudo apt install audacity
 ```
-<br>
 ## Kdenlive(影片編輯器)
 ```
 sudo apt install kdenlive
 ```
-<br>
 ## GIMP(圖像編輯器)
 ```
 sudo apt install gimp
 ```
-<br>
 ## GNOME影像檢視器(可順利跑GIF檔，BCM2835無法)
 ```
 sudo apt install eog
 ```
-<br>
 ## calibre(電子書軟體)
 ```
 sudo apt install calibre
 ```
-<br>
 ## Firefox瀏覽器(Firefox ESR)
 ```
 sudo apt install firefox-esr
 ```
-<br>
 ## Chromium瀏覽器
 ```
 sudo apt install chromium-browser
 ```
-<br>
 ## Back in Time(備份還原工具)
 ```
 sudo apt install backintime-gnome
 ```
-<br>
 # 其他指令
 -----------------------------------------
 ## 安裝.deb檔

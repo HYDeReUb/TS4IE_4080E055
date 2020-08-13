@@ -128,7 +128,7 @@ sudo apt install eog
 ```
 sudo apt install calibre
 ```
-## Firefox瀏覽器(Firefox ESR)
+## Firefox ESR(Firefox瀏覽器)
 ```
 sudo apt install firefox-esr
 ```
@@ -136,7 +136,7 @@ sudo apt install firefox-esr
 ```
 sudo apt install chromium-browser
 ```
-## 備份還原工具(Back in Time GNOME桌面版)
+## Back in Time GNOME桌面版(備份還原工具)
 ```
 sudo apt install backintime-gnome
 ```

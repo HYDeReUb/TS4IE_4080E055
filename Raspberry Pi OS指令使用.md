@@ -1,6 +1,8 @@
 ## 事先警告:本文是個人善意提供，若遇任何風險還請自行負責
-------------------------------------------
+
+
 # APT運用
+-----------------------------------------
 ## 更新
 ```
 sudo apt update  (需要時再改成apt-get)
@@ -45,7 +47,9 @@ sudo apt clean (需要時再改成apt-get)
 ```
 sudo apt autoclean (需要時再改成apt-get)
 ```
+
 # 已知套件
+-----------------------------------------
 "apt"有問題的話再改成"apt-get"看看<br>
 ## 支援exFAT(FAT64)
 ```
@@ -56,23 +60,26 @@ sudo apt install exfat-fuse
 ```
 sudo apt install 'exfat-*'
 ```
-#### 舊版(無法更新)用法
+#### 舊版(無法更新)
 ```
 sudo apt-add-repository ppa:relan/exfat
 sudo apt-get update
 sudo apt-get install 'exfat-utils'
 sudo apt-get install 'exfat-fuse'
 ```
+
 ## 支援NTFS
 ```
 sudo apt install ntfs-3g-dev
 ```
+
 ## 印表機
 ```
 sudo apt install libcups2-dev
 sudo apt install cups
 sudo apt install system-config-printer
 ```
+
 ## 光碟燒錄
 注意!!請在足夠的電源下再使用光碟機!!!
 ### K3b(比較推薦)
@@ -83,6 +90,7 @@ sudo apt install k3b
 ```
 sudo apt install xfburn
 ```
+
 ## 防火牆
 ### GUFW(圖形介面，易於使用)
 ```
@@ -92,52 +100,65 @@ sudo apt install gufw
 ```
 sudo apt install ufw
 ```
+
 ## GNOME磁碟(可執行快速、完整格式化＆關閉磁碟機動作等)
 建議！完整格式化請在電源充足的情況(不能出現閃電降壓符號)並且搭配主動式散熱器(風扇+散熱片)使用
 ```
 sudo apt install gnome-disk-utility
 ```
+
 ## GParted(硬碟分割區軟體)
 ```
 sudo apt install gparted
 ```
+
 ## Nautilus檔案瀏覽器(GNOME檔案瀏覽器)
 ```
 sudo apt install nautilus
 ```
+
 ## Audacity(錄音與音訊編輯器，須搭配USB聲卡使用)
 ```
 sudo apt install audacity
 ```
+
 ## Kdenlive(影片編輯器)
 ```
 sudo apt install kdenlive
 ```
+
 ## GIMP(圖像編輯器)
 ```
 sudo apt install gimp
 ```
+
 ## GNOME影像檢視器(可順利跑GIF檔，BCM2835無法)
 ```
 sudo apt install eog
 ```
+
 ## calibre(電子書軟體)
 ```
 sudo apt install calibre
 ```
+
 ## Firefox瀏覽器(Firefox ESR)
 ```
 sudo apt install firefox-esr
 ```
+
 ## Chromium瀏覽器
 ```
 sudo apt install chromium-browser
 ```
+
 ## Back in Time(備份還原工具)
 ```
 sudo apt install backintime-gnome
 ```
+
 # 其他指令
+-----------------------------------------
 ## 安裝.deb檔
 ```
 (先用"cd"調整該檔資料夾的位置)sudo dpkg -i *.deb
@@ -176,7 +197,9 @@ done
  
 vcgencmd measure_temp
 ```
+
 # vi簡單用法
+-----------------------------------------
 ## 操作模式
 ```
 a 由游標之後進行寫入模式
@@ -212,7 +235,9 @@ dd 刪除游標該行
 ```
 [Esc] 退出寫入模式到操作模式
 ```
+
 # 其他操作(Terminal終端機)
+-----------------------------------------
 ##### > (建立檔案)
 ##### touch (建立檔案或修改檔案時間)
 ##### cat (瀏覽或編輯文字檔)

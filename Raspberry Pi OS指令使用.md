@@ -82,16 +82,16 @@ K3b(比較推薦)
 ```
 sudo apt install k3b
 ```
-Xfburn(易於操作)
+Xfburn(方便操作)
 ```
 sudo apt install xfburn
 ```
 ## 防火牆
-GUFW(圖形介面，易於使用)
+GUFW(圖形介面，容易使用)
 ```
 sudo apt install gufw
 ```
-UFW(需指令輸入，容量不佔空間)
+UFW(指令輸入，不佔空間)
 ```
 sudo apt install ufw
 ```
@@ -136,7 +136,7 @@ sudo apt install firefox-esr
 ```
 sudo apt install chromium-browser
 ```
-## Back in Time(備份還原工具)
+## 備份還原工具(Back in Time GNOME桌面版)
 ```
 sudo apt install backintime-gnome
 ```

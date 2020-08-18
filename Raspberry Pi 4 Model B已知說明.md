@@ -82,7 +82,7 @@ https://blog.gtwang.org/linux/howto-disable-ssh-root-login-in-linux/
 https://www.itread01.com/content/1532680819.html
 ```
 ## 2.把USB儲存裝置當主硬碟開機
-### 注意:本篇針對Raspberry Pi 4 Model B做說明，其他Raspberry Pi需自行尋找
+### 注意:本篇針對Raspberry Pi 4 Model B做說明，其他Raspberry Pi需自行尋找操作方式
 ### 注意:這裡的操作只對Raspberry Pi OS有效而已，NOOBS跟其他OS可能無效
 ### 警告:本操作具有一定的風險性，若稍有錯誤可能會有開不了機的情況。請謹慎操作
 ```
@@ -117,7 +117,8 @@ https://www.youtube.com/watch?v=2zrwjGcyM5s
 
 7.copy完成後先關機並切斷電源，然後把SD卡抽走後在通電開機，若能成功進入彩屏畫面就表示成功了
 ```
-## 3.定期備份系統資料(最好主系統硬碟是外接USB的SSD而非Micro SD卡)
+## 3.定期備份系統資料
+### 建議:最好主系統硬碟是外接USB的SSD而非Micro SD卡
 ### 注意:這是我嘗試出來的結果，不確定是否真的有用
 ///這可以備份自己的檔案到其他地方，算是相當方便，不過這要自行發揮了///
 ```

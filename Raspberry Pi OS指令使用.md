@@ -108,7 +108,8 @@ sudo apt install gparted
 ```
 sudo apt install nautilus
 ```
-## Audacity(錄音與音訊編輯器，須搭配USB聲卡使用)
+## Audacity(錄音與音訊編輯器)
+須搭配USB聲卡使用
 ```
 sudo apt install audacity
 ```

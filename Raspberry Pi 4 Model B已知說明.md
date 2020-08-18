@@ -82,7 +82,7 @@ https://blog.gtwang.org/linux/howto-disable-ssh-root-login-in-linux/
 https://www.itread01.com/content/1532680819.html
 ```
 ## 2.把USB儲存裝置當主硬碟開機
-### 注意:本篇針對Raspberry Pi 4 Model B做說明，其他Raspberry Pi無法使用
+### 注意:本篇針對Raspberry Pi 4 Model B做說明，其他Raspberry Pi需自行尋找
 ### 注意:這裡的操作只對Raspberry Pi OS有效而已，NOOBS跟其他OS可能無效
 ### 警告:本操作具有一定的風險性，若稍有錯誤可能會有開不了機的情況。請謹慎操作
 ```

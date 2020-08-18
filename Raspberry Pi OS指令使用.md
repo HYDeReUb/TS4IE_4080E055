@@ -128,7 +128,7 @@ sudo apt install eog
 ```
 sudo apt install calibre
 ```
-## Firefox ESR(Firefox瀏覽器)
+## Firefox瀏覽器(Firefox ESR)
 ```
 sudo apt install firefox-esr
 ```
@@ -140,6 +140,12 @@ sudo apt install chromium-browser
 ```
 sudo apt install backintime-gnome
 ```
+## Arduino(Arduino IDE)
+ARMv7架構以上才能使用，也就是至少要第二代的樹莓派才能用，Pi Zero系列也是不能使用
+```
+sudo apt install arduino
+```
+
 # 其他指令
 -----------------------------------------
 ## 安裝.deb檔

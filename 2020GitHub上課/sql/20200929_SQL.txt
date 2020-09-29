@@ -1,0 +1,65 @@
+-- 20200922
+-- 列出所有學號與姓名
+SELECT sid, name FROM students
+
+-- 列出所有學生的資料
+SELECT sid, name, tel, birthday, gpa
+FROM students
+
+SELECT * FROM students
+
+-- 列出所有課程資料+已加的學分數(AS 別名)
+SELECT *, credits+2 AS 已加學分數 FROM courses
+
+-- 列出所有學生資料(以中文名稱為欄位別名)
+SELECT sid AS 學號 , name AS 姓名, birthday 生日, tel 電話, gpa 成績
+FROM students
+
+-- 2020/09/29
+-- 列出所有學生資料+年齡
+SELECT *, YEAR(CURRENT_DATE())-YEAR(birthday) AS 年齡 FROM students
+
+-- 使用DATEDIFF()做日期差異--不適合計算年齡
+SELECT *, DATEDIFF(CURRENT_DATE(), birthday)/365 AS 年齡 FROM students
+
+-- 列出所有在選課資料(Classes)的學號(sid)--不重複DISTINCT
+SELECT DISTINCT sid FROM classes
+
+-- WHERE 條件 篩選
+-- 找出[陳會安]的學生資料(students)
+SELECT * FROM students WHERE name = '陳會安'
+
+-- 找出 GPA>3 的學生
+SELECT * FROM students WHERE gpa > 3
+
+-- 找出選課(Classes)成績(score)在70-80之間
+SELECT * FROM classes WHERE (score >= 70) AND (score <= 80)
+
+-- 找出選課(Classes)成績(score)在70-80之間(BETWEEN AND)
+SELECT * FROM classes WHERE score BETWEEN 70 AND 80
+
+-- 找出選課(Classes)成績(score)在70-80之外
+SELECT * FROM classes WHERE (score < 70) OR (score > 80)
+
+-- 找出選課(Classes)成績(score)在70-80之外(BETWEEN AND)
+-- 較快
+SELECT * FROM classes WHERE score NOT BETWEEN 70 AND 80
+-- 較慢
+SELECT * FROM classes WHERE NOT score BETWEEN 70 AND 80
+
+-- 找出**不是[陳會安]的學生資料(students)
+SELECT * FROM students WHERE name <> '陳會安'
+
+-- 找出學生年齡在30-40之間
+SELECT *, YEAR(CURRENT_DATE())-YEAR(birthday) AS 年齡 FROM students
+  WHERE YEAR(CURRENT_DATE())-YEAR(birthday) BETWEEN 30 AND 40
+
+-- 找出1980年後出生的學生
+SELECT * FROM students WHERE birthday >= '1980/01/01'
+
+-- 找出1981年出生的學生
+SELECT * FROM students WHERE birthday >= '1981/01/01' AND birthday <= '1981/12/31'
+
+SELECT * FROM students WHERE birthday BETWEEN '1981/01/01' AND '1981/12/31'
+
+-- LIKE 字串
